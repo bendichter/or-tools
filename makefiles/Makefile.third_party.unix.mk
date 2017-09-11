@@ -282,6 +282,9 @@ Makefile.local: makefiles/Makefile.third_party.unix.mk
 	@echo Generating Makefile.local
 	@echo JDK_DIRECTORY = $(JDK_DIRECTORY)>> Makefile.local
 	@echo UNIX_PYTHON_VER = $(DETECTED_PYTHON_VERSION)>> Makefile.local
+	@echo UNIX_PYTHON_VER = 3.6>> Makefile.local
+	@echo SWIG_PYTHON3_FLAG = -py3>> Makefile.local
+	@echo ADD_PYTHON_INC = -I/$PREFIX/include/python3.6m/>> Makefile.local
 	@echo PATH_TO_CSHARP_COMPILER = $(DETECTED_MCS_BINARY)>> Makefile.local
 	@echo CLR_KEYFILE = bin/or-tools.snk>> Makefile.local
 	@echo >> Makefile.local
